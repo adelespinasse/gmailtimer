@@ -1,0 +1,8 @@
+cron:
+- description: Update inboxes
+  url: /q/cron
+  timezone: EST5EDT
+  schedule: every day 20:00
+  retry_parameters:
+    max_doublings: 5
+    min_backoff_seconds: 120
